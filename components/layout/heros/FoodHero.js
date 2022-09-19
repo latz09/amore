@@ -20,7 +20,7 @@ const FoodHero = () => {
                 Our Kitchen
             </h1>
             <h2 className='text-3xl md:text-5xl font-amoreCursive'>
-                Breakfast, lunch, and snacks.  We offer a wide variety including Gluten Free!
+                Breakfast, lunch, and snacks.  We offer a wide variety, including Gluten Free!
             </h2>
             <div className='py-4'>
                 <Link href={'/'}>

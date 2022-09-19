@@ -15,7 +15,7 @@ const Navbar = () => {
 	return (
 		<div className='shadow-md w-full  top-0 left-0 z-10'>
 			<div className='bg-gray-200'>
-				<div className='max-w-7xl mx-auto flex items-center justify-between py-2 px-3 text-gray-600 tracking-wider'>
+				<div className='max-w-7xl mx-auto flex items-center justify-between pt-1 px-3 text-gray-600 tracking-wider'>
 					<Link href={'/'}>
 						<button
 							className='hover:opacity-80 duration-700 text-4xl cursor-pointer'
@@ -23,7 +23,7 @@ const Navbar = () => {
 							aria-label='Navigate Home'
 						>
 							<div>
-								<Image src={logo} alt='logo' height={90} width={90} />
+								<Image src={logo} alt='logo' height={70} width={70} />
 							</div>
 						</button>
 					</Link>

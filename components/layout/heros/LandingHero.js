@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import coffee from '../../../public/images/coffee/chocolateDrizzle.jpg';
+import coffee from '../../../public/images/building/insideCounter.jpg';
 
 const LandingHero = () => {
 	return (

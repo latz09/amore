@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import coffee from '../../../public/images/Coffee/foamart.jpg';
+import coffee from '../../../public/images/Coffee/chocolateDrizzle.jpg';
 
 const CoffeeHero = () => {
 	return (
