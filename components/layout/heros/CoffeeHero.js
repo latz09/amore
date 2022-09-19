@@ -16,11 +16,11 @@ const CoffeeHero = () => {
 			/>
 
 			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-50'>
-				<div className='text-white grid gap-4 place-items-center max-w-7xl mx-auto '>
+				<div className='text-white grid gap-4 place-items-center max-w-7xl mx-auto text-center px-1'>
 					<h1 className='text-6xl md:text-8xl tracking-wider'>
 						Love For Coffee
 					</h1>
-					<h2 className='text-3xl md:text-5xl text-center font-amoreCursive'>
+					<h2 className='text-3xl md:text-5xl font-amoreCursive'>
 						We offer a wide varity of drink choices including alternative milks.
 					</h2>
 					<div className='py-4'>

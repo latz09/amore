@@ -3,7 +3,7 @@ import logo from '../../../public/images/logo.webp';
 
 const AboutBlurb = () => {
 	return (
-		<div className='max-w-7xl mx-auto grid place-items-center py-8 text-xl tracking-wider leading-7 text-gray-700 '>
+		<div className='max-w-7xl mx-auto grid place-items-center py-8 text-xl tracking-wider leading-7 text-gray-700 px-3'>
 			<div className='grid gap-5 md:gap-0 md:grid-cols-2 place-items-center'>
 				<div className='opacity-90'>
 					<Image

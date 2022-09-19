@@ -15,9 +15,9 @@ const LandingHero = () => {
 			/>
 
 			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-50'>
-				<div className='text-white grid gap-4 place-items-center '>
+				<div className='text-white grid gap-4 place-items-center text-center px-1 '>
 					<h1 className='text-6xl md:text-8xl tracking-wider'>AMORE COFFEE</h1>
-					<h2 className="text-3xl md:text-5xl text-center font-amoreCursive">All you need is love and a cup of coffee</h2>
+					<h2 className="text-3xl md:text-5xl font-amoreCursive">All you need is love and a cup of coffee</h2>
 				</div>
 			</div>
 		</div>
