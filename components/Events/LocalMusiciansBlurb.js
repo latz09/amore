@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import twoSingers from '../../public/images/events/twoSingers.jpg';
+import Link from 'next/link';
 
 const LocalMusiciansBlurb = () => {
 	return (
@@ -13,13 +12,18 @@ const LocalMusiciansBlurb = () => {
 					We offer music opening every Friday and Saturday from 7pm to 8:45 pm.
 				</span>
 				<div className='grid place-items-center gap-2 md:flex md:space-x-4 justify-center w-full text-xl pt-3'>
-					<button className='btn w-full md:w-1/4 bg-gray-100 hover:bg-gray-200 border-none'>Book Now</button>
-					<button className='btn w-full md:w-1/4 bg-gray-100 hover:bg-gray-200 border-none'>
-						Upcoming Events
-					</button>
+					<Link href={'/amore-coffee-artists'}>
+						<a className='btn w-full md:w-1/4 bg-gray-100 hover:bg-gray-200 border-none'>
+							Learn More
+						</a>
+					</Link>
+					<Link href={'/amore-coffee-event-space'}>
+						<a className='btn w-full md:w-1/4 bg-gray-100 hover:bg-gray-200 border-none'>
+							Upcoming Events
+						</a>
+					</Link>
 				</div>
 			</div>
-			
 		</div>
 	);
 };

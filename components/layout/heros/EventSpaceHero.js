@@ -27,9 +27,9 @@ const EventSpaceHero = () => {
 					<div className="py-4">
 						<h2 className="text-2xl animate-pulse">Reserve your day!</h2>
 						<div className='py-4 grid gap-3'>
-							<Link href={'/'}>
+							<Link href={'/amore-coffee-event-space'}>
 								<span className='btn bg-gray-200 text-gray-800 text-3xl'>
-									Book Now
+									Learn More
 								</span>
 							</Link>
 							<span className='text-2xl'>{`Or call us at 651 330-0570`}</span>

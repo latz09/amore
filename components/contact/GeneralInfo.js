@@ -4,7 +4,7 @@ const GeneralInfo = () => {
 	return (
 		<div className='grid gap-5 place-items-center text-xl text-gray-800 '>
 			<p className='font-amoreCursive text-3xl tracking-widest text-center max-w-3xl'>
-				Amore Coffee is located at the intersection of Annapolis street and
+				Amore Coffee is located at the intersection of Annapolis Street and
 				Smith Avenue in West Saint Paul.
 			</p>
 

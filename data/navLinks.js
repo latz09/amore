@@ -9,11 +9,11 @@ export const navLinks = [
     },
     {
         name: 'Event Space',
-        link: '/',
+        link: '/amore-coffee-event-space',
     },
     {
         name: 'Artists',
-        link: '/',
+        link: '/amore-coffee-artists',
     }, 
     {
         name: 'Contact Us',
