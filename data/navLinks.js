@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         name: 'About Us',
-        link: '/',
+        link: '/about-amore-coffee',
     },
     {
         name: 'Menu',
@@ -17,7 +17,7 @@ export const navLinks = [
     }, 
     {
         name: 'Contact Us',
-        link: '/',
+        link: '/contact-us',
     }, 
 
 ];

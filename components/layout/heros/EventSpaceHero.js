@@ -4,7 +4,7 @@ import eventSpace from '../../../public/images/building/inside.jpg';
 
 const EventSpaceHero = () => {
 	return (
-		<div className='relative w-full h-[80vh] mb-72'>
+		<div className='relative w-full h-[80vh]'>
 			<Image
 				src={eventSpace}
 				alt=''

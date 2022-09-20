@@ -11,8 +11,7 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 			<div>
 				<Layout>
-          {/* Set font  */}
-					<div className=''> 
+					<div className=''>
 						<Component {...pageProps} />
 					</div>
 				</Layout>
