@@ -5,7 +5,7 @@ export const navLinks = [
     },
     {
         name: 'Menu',
-        link: '/',
+        link: '/amore-coffee-menu',
     },
     {
         name: 'Event Space',
