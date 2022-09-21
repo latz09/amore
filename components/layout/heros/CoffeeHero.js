@@ -21,10 +21,10 @@ const CoffeeHero = () => {
 						Love For Coffee
 					</h1>
 					<h2 className='text-3xl md:text-5xl font-amoreCursive'>
-						We offer a wide varity of drink choices including alternative milks.
+						We offer a wide variety of drink choices including alternative milks.
 					</h2>
 					<div className='py-4'>
-						<Link href={'/'}>
+						<Link href={'/amore-coffee-menu'}>
 							<span className="btn bg-gray-200 text-gray-800 text-4xl">Menu</span>
 						</Link>
 					</div>

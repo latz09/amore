@@ -12,10 +12,15 @@ const UnderConstruction = () => {
 				<h1 className='text-2xl md:text-4xl text-gray-300'>
 					Other Pages on your redesign to explore--
 				</h1>
-				<div className=' flex flex-wrap sm:grid sm:grid-cols-3 gap-3 items-center px-4'>
+				<div className=' grid grid-cols-2 sm:grid sm:grid-cols-4 gap-3 items-center px-4'>
 					<Link href={'/'}>
 						<a className='p-2 md:p-3 bg-gray-200 text-gray-700 shadow shadow-gray-200 md:text-xl font-bold tracking-widest hover:bg-opacity-70 transtion duration-700'>
 							Home Page
+						</a>
+					</Link>
+					<Link href={'/amore-coffee-menu'}>
+						<a className='p-2 md:p-3 bg-gray-200 text-gray-700 shadow shadow-gray-200 md:text-xl font-bold tracking-widest hover:bg-opacity-70 transtion duration-700'>
+							Our Menu
 						</a>
 					</Link>
 					<Link href={'/about-amore-coffee'}>
