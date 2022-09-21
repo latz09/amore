@@ -14,6 +14,7 @@ module.exports = {
 			customColor: '#49BFB7',
 			black: '#000000',
 			white: '#FFFFFF',
+			chalk: '#FBF7F5 ',
 			gray: {
 				50: '#f9fafb',
 				100: '#f3f4f6',
