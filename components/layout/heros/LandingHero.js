@@ -23,7 +23,7 @@ const LandingHero = () => {
 
 			transition: {
 				
-				staggerChildren: 0.24,
+				staggerChildren: 0.34,
 				
 				
 			},
@@ -42,7 +42,7 @@ const LandingHero = () => {
 		visible: {
 			color: ['#ffffff', '#E9E25F', '#E9E25F', '#ffffff'],
 			transition: {
-				delay: 2,
+				delay: 3.1,
 				duration: 5,
 			},
 		},
@@ -52,7 +52,7 @@ const LandingHero = () => {
 		visible: {
 			opacity: 1,
 			transition: {
-				delay: 1.85,
+				delay: 2.85,
 				duration: 3,
 			},
 		},
