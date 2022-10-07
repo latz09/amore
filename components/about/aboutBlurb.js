@@ -1,11 +1,29 @@
 import Image from 'next/image';
 import logo from '../../public/images/logo.webp';
-
+import { motion } from 'framer-motion';
 const AboutBlurb = () => {
+	const logoVariant = {
+		hidden: { opacity: 1 },
+		visible: {
+			
+			rotate: [0,-8, 8,0],
+			transition: {
+				type: 'springy',
+				
+				duration: 4.4,
+				ease: 'easeInOut',
+			},
+		},
+	};
 	return (
 		<div className='max-w-7xl mx-auto grid place-items-center py-8 text-xl tracking-wider leading-7 text-gray-700 px-3'>
 			<div className='grid gap-5 md:gap-0 md:grid-cols-2 place-items-center'>
-				<div className='opacity-90'>
+				<motion.div
+					className='opacity-90'
+					variants={logoVariant}
+					initial='hidden'
+					whileInView='visible'
+				>
 					<Image
 						src={logo}
 						alt='logo'
@@ -13,10 +31,10 @@ const AboutBlurb = () => {
 						height={300}
 						width={300}
 					/>
-				</div>
+				</motion.div>
 				<p className='grid gap-4'>
 					<span>
-						<span className="font-medium">Amore Coffee </span>
+						<span className='font-medium'>Amore Coffee </span>
 						{`is a unique specialty shop located on the corner of Smith and Annapolis.  With a fabulous owner and welcoming staff, you'll find all of your coffee needs.`}
 					</span>
 					<span>

@@ -59,7 +59,7 @@ const LandingHero = () => {
 	};
 
 	return (
-		<div className='relative w-full h-[70vh]'>
+		<div className='relative w-full h-[89vh] md:h-[85vh]'>
 			<Image
 				src={coffee}
 				alt=''
