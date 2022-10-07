@@ -22,7 +22,10 @@ const LandingHero = () => {
 			opacity: 1,
 
 			transition: {
+				
 				staggerChildren: 0.24,
+				
+				
 			},
 		},
 	};
@@ -49,7 +52,7 @@ const LandingHero = () => {
 		visible: {
 			opacity: 1,
 			transition: {
-				delay: 1.45,
+				delay: 1.85,
 				duration: 3,
 			},
 		},
