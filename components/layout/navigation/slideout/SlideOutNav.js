@@ -22,8 +22,8 @@ const SlideOutNav = ({ open, setOpen }) => {
 			<div className='flex-grow '>
 				<SlideNavLinks open={open} setOpen={setOpen} />
 			</div>
-			<div className='py-8 grid gap-8'>
-				<Hours />
+			<div className=''>
+				
 				<FollowUs />
 			</div>
 		</div>
