@@ -15,14 +15,14 @@ const Navbar = () => {
 
 	return (
 		<nav className=''>
-			<div className='max-w-7xl mx-auto flex justify-between items-center px-8 z-10 text-blue-600  dark:text-blue-400'>
+			<div className='max-w-7xl mx-auto flex justify-between items-center px-8 z-10' >
 				<button
 					className='py-1 hover:opacity-70 transition duration-700'
 					onClick={closeMenu}
 				>
 					<Link href={'/'}>
-						<a>
-							<Image src={logo} alt='logo' height={70} width={100} />
+						<a className="">
+							<Image src={logo} alt='logo' height={90} width={90} />
 						</a>
 					</Link>
 				</button>
