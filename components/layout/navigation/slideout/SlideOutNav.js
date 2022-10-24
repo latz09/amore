@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const SlideOutNav = ({ open, setOpen }) => {
 	return (
-		<div className='w-full flex flex-col h-full'>
+		<div className='w-full flex flex-col h-screen'>
 			<div className=''>
 				<div className='h-1/2 w-1/2 mx-auto p-8'>
 					<motion.div
@@ -19,10 +19,10 @@ const SlideOutNav = ({ open, setOpen }) => {
 					</motion.div>
 				</div>
 			</div>
-			<div className='flex-grow '>
+			<div className=' '>
 				<SlideNavLinks open={open} setOpen={setOpen} />
 			</div>
-			<div className=''>
+			<div className='py-12'>
 				
 				<FollowUs />
 			</div>
