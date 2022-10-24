@@ -9,7 +9,7 @@ const SlideOutNav = ({ open, setOpen }) => {
 	return (
 		<div className='w-full flex flex-col h-screen'>
 			<div className=''>
-				<div className='h-1/2 w-1/2 mx-auto p-8'>
+				<div className='h-1/2 w-1/2 mx-auto p-4'>
 					<motion.div
 						initial={{}}
 						whileInView={{ rotate: [7, -7, 7, -7, 0],  }}
