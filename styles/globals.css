@@ -11,4 +11,10 @@
 	.chalkboard {
 		@apply bg-gradient-to-r from-[#212121] via-[#212121] to-[#191919] min-h-screen border-2 border-gray-900 shadow-xl;
 	}
+	.navbar-overlay {
+		@apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-10 ;
+	}
+	.navbar {
+		@apply bg-white bg-opacity-95 w-2/3 h-screen text-black grid place-items-center;
+	}
 }
