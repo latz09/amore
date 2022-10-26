@@ -13,7 +13,7 @@ const ChalkBoard = ({ data }) => {
 		<div className='chalkboard'>
 			<MenuHeading />
 			<motion.div className='grid md:grid-cols-2 p-6 text-chalk gap-12'  
-			initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 3.2}}
+			initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1, duration: .7}}
 			
 			>
 				<div className="grid gap-8">

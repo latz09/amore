@@ -1,5 +1,5 @@
 const TeaItem = ({ teaData }) => {
-	console.log(teaData);
+	
 	return (
 		<div className="grid gap-1">
 			{teaData.map((tea) => (
