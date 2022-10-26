@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import eventSpace from '../../../public/images/building/inside.jpg';
+import InViewContainer from '../../utils/animations/InViewContainer';
 
 const EventSpaceHero = () => {
 	return (
@@ -16,6 +17,7 @@ const EventSpaceHero = () => {
 			/>
 
 			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-70'>
+				<InViewContainer>
 				<div className='text-white grid gap-4 place-items-center max-w-7xl mx-auto text-center px-1'>
 					<h1 className='text-4xl md:text-6xl tracking-wider'>
 						Meeting and Event Space Available!
@@ -36,6 +38,7 @@ const EventSpaceHero = () => {
 						</div>
 					</div>
 				</div>
+				</InViewContainer>
 			</div>
 		</div>
 	);

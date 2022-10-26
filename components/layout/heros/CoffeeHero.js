@@ -19,8 +19,8 @@ const CoffeeHero = () => {
 		visible: {
 			opacity: 1,
 			transition: {
-				delay: 1.2,
-				duration: 1.4,
+				delay: 1.1,
+				duration: 2,
 			},
 		},
 	};
@@ -51,7 +51,7 @@ const CoffeeHero = () => {
 						className='text-3xl md:text-5xl font-amoreCursive'
 						variants={phraseVariant}
 						initial='hidden'
-						animate='visible'
+						whileInView='visible'
 					>
 						We offer a wide variety of drink choices including alternative
 						milks.

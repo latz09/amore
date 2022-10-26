@@ -4,12 +4,18 @@ import HotDrinks from './categories/HotDrinks';
 import IcedDrinks from './categories/IcedDrinks';
 import Specials from './categories/Specials';
 import MenuHeading from './MenuHeading';
+import { motion } from "framer-motion";
 
 const ChalkBoard = ({ data }) => {
+
+
 	return (
 		<div className='chalkboard'>
 			<MenuHeading />
-			<div className='grid md:grid-cols-2 p-6 text-chalk gap-12'>
+			<motion.div className='grid md:grid-cols-2 p-6 text-chalk gap-12'  
+			initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 3.2}}
+			
+			>
 				<div className="grid gap-8">
 					<Coffee data={data.coffee} />
 					<Specials data={data.specials} />
@@ -19,7 +25,7 @@ const ChalkBoard = ({ data }) => {
 					<Espresso data={data.espresso} />
 					<HotDrinks data={data.hotDrinks} />
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
