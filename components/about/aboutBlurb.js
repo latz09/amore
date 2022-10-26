@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import logo from '../../public/images/logo.webp';
 import { motion } from 'framer-motion';
+import InViewContainer from '../utils/animations/InViewContainer';
 const AboutBlurb = () => {
 	const logoVariant = {
 		hidden: { opacity: 1 },
 		visible: {
-			
-			rotate: [0,-8, 8,0],
+			rotate: [0, -8, 8, 0],
 			transition: {
 				type: 'springy',
-				
+
 				duration: 4.4,
 				ease: 'easeInOut',
 			},
@@ -32,19 +32,21 @@ const AboutBlurb = () => {
 						width={300}
 					/>
 				</motion.div>
-				<p className='grid gap-4'>
-					<span>
-						<span className='font-medium'>Amore Coffee </span>
-						{`is a unique specialty shop located on the corner of Smith and Annapolis.  With a fabulous owner and welcoming staff, you'll find all of your coffee needs.`}
-					</span>
-					<span>
-						We offer a wide variety of food and drink choices including{' '}
-						<span>Gluten Free and Alternative Milk Choices.</span>
-					</span>
-					<span className='font-amoreCursive text-2xl font-semibold tracking-widest'>
-						Stop in to see our daily specials and say hello!
-					</span>
-				</p>
+				<InViewContainer>
+					<p className='grid gap-4'>
+						<span>
+							<span className='font-medium'>Amore Coffee </span>
+							{`is a unique specialty shop located on the corner of Smith and Annapolis.  With a fabulous owner and welcoming staff, you'll find all of your coffee needs.`}
+						</span>
+						<span>
+							We offer a wide variety of food and drink choices including{' '}
+							<span>Gluten Free and Alternative Milk Choices.</span>
+						</span>
+						<span className='font-amoreCursive text-2xl font-semibold tracking-widest'>
+							Stop in to see our daily specials and say hello!
+						</span>
+					</p>
+				</InViewContainer>
 			</div>
 		</div>
 	);
