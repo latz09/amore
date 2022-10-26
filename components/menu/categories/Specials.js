@@ -1,9 +1,8 @@
-import InViewContainer from '../../utils/animations/InViewContainer';
 import DrinkItem from '../DrinkItem';
 
 const Specials = ({ data }) => {
 	return (
-		<InViewContainer>
+		<div>
             <h3 className="text-5xl pb-3 font-amoreCursive">Amore Specials</h3>
 			<div className='grid gap-4'>
 				{data.map((drink) => (
@@ -16,7 +15,7 @@ const Specials = ({ data }) => {
 					</div>
 				))}
 			</div>
-		</InViewContainer>
+		</div>
 	);
 };
 
