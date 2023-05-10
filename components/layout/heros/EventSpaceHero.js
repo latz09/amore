@@ -5,7 +5,7 @@ import InViewContainer from '../../utils/animations/InViewContainer';
 
 const EventSpaceHero = () => {
 	return (
-		<div className='relative w-full h-[80vh]'>
+		<div className='relative   h-screen'>
 			<Image
 				src={eventSpace}
 				alt=''
@@ -16,7 +16,7 @@ const EventSpaceHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-70'>
+			<div className='relative flex justify-center items-center h-full bg-dark/20'>
 				<InViewContainer>
 				<div className='text-white grid gap-4 place-items-center max-w-7xl mx-auto text-center px-1'>
 					<h1 className='text-4xl md:text-6xl tracking-wider'>

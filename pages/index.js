@@ -8,17 +8,18 @@ import LandingHero from '../components/layout/heros/LandingHero';
 
 export default function Home() {
 	return (
-		<>
+		<div className="grid  bg-secondary pb-36">
 			<LandingHero />
-			{/* <div className=' bg-gray-200'>
-				<AboutBlurb />
-				<CoffeeHero />
-				<ShortAbout />
-				<FoodHero />
-				<LocalMusiciansBlurb />
+		
+				{/* <AboutBlurb /> */}
+				{/* <CoffeeHero /> */}
+				{/* <ShortAbout /> */}
+				{/* <FoodHero /> */}
+
+				{/* <LocalMusiciansBlurb /> */}
 				<EventSpaceHero />
 				
-			</div> */}
-		</>
+		
+		</div>
 	);
 }
