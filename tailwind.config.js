@@ -7,10 +7,16 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			amore: ['Fira Sans', 'sans-serif'],
-			amoreCursive: ['Indie Flower', 'cursive'],
+			tinos: ['Tinos', 'serif'],
+			mulish: ['Mulish', 'sans-serif'],
+			questrial: ['Questrial', 'sans-serif'],
+			oswald: ['Oswald', 'sans-serif'],
 		},
 		colors: {
+			primary: '#F16724',
+			secondary: '#86523A',
+			dark: '#2A1003',
+			light: '#FFEFE7',
 			customColor: '#49BFB7',
 			black: '#000000',
 			white: '#FFFFFF',
@@ -29,5 +35,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [], 
 };

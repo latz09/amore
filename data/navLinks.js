@@ -1,8 +1,8 @@
 export const navLinks = [
-    {
-        name: 'About Us',
-        link: '/about-amore-coffee',
-    },
+    // {
+    //     name: 'About Us',
+    //     link: '/about-amore-coffee',
+    // },
     {
         name: 'Menu',
         link: '/amore-coffee-menu',

@@ -14,7 +14,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className=''>
+		<nav className=' bg-gradient-to- from-primary/50 via-primary/40 to-primary/0 text-light   font-questrial tracking-wider'>
 			<div className='max-w-7xl mx-auto flex justify-between items-center px-8 z-10' >
 				<button
 					className='py-1 hover:opacity-70 transition duration-700'
@@ -27,7 +27,7 @@ const Navbar = () => {
 					</Link>
 				</button>
 
-				<div className='hidden md:flex'>
+				{/* <div className='hidden md:flex  h-full'>
 					{navLinks.map((link) => (
 						<div
 							key={link.name}
@@ -40,15 +40,18 @@ const Navbar = () => {
 							</Link>
 						</div>
 					))}
+				</div> */}
+				<div className='hidden md:flex '>
+					<span className="bg text-light btn font-normal tracking-wider  text-2xl scale-y-150  font-oswald p-4 rounded-sm">Get in touch</span>
 				</div>
 
-				<div className='text-3xl text-gray-800 hover:opacity-60 md:hidden z-50 transition duration-700'>
+				<div className='text-3xl text-primary hover:opacity-60 md:hidden z-50 transition duration-700'>
 					<button
 						onClick={() => {
 							setOpen(!open);
 						}}
 					>
-						<span className={`${open && 'text-white font-bold'}`}>{!open ? <RiMenu3Fill /> : <RiCloseLine />}</span>
+						<span className={`${open && ' font-bold text-light '}`}>{!open ? <RiMenu3Fill /> : <RiCloseLine />}</span>
 					</button>
 				</div>
 			</div>

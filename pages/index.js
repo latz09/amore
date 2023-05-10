@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<>
 			<LandingHero />
-			<div className=' bg-gray-200'>
+			{/* <div className=' bg-gray-200'>
 				<AboutBlurb />
 				<CoffeeHero />
 				<ShortAbout />
@@ -18,7 +18,7 @@ export default function Home() {
 				<LocalMusiciansBlurb />
 				<EventSpaceHero />
 				
-			</div>
+			</div> */}
 		</>
 	);
 }

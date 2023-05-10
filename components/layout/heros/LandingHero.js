@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import coffee from '../../../public/images/building/insideCounter.jpg';
+import coffee from '../../../public/images/building/outsideSunset.jpg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Navbar from '../navigation/Navbar';
 const LandingHero = () => {
 	const line = [
 		'All',
@@ -34,16 +35,7 @@ const LandingHero = () => {
 			x: 0,
 		},
 	};
-	const containerVariant = {
-		hidden: { color: '#ffffff' },
-		visible: {
-			color: ['#ffffff', '#E9E25F', '#E9E25F', '#E9E25F', '#ffffff'],
-			transition: {
-				delay: 3.1,
-				duration: 5.2,
-			},
-		},
-	};
+
 	const buttonVariant = {
 		hidden: { opacity: 0 },
 		visible: {
@@ -56,27 +48,31 @@ const LandingHero = () => {
 	};
 
 	return (
-		<div className='relative w-full h-[89vh] md:h-[85vh] '>
+		<div className='relative w-full h-screen '>
 			<Image
 				src={coffee}
 				alt=''
 				priority='true'
 				layout='fill'
 				objectFit='cover'
-				objectPosition='center'
+				objectPosition='bottom'
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-50'>
-				<div className='text-white grid gap-4 place-items-center text-center px-1 '>
-					<h1 className='text-6xl md:text-8xl tracking-wider'>AMORE COFFEE</h1>
-					<motion.div
-						variants={containerVariant}
-						initial='hidden'
-						animate='visible'
+			<div className='relative flex flex-col justify-items-center  w h-full bg-secondary/20 text-light/90'>
+				<Navbar />
+				<div className='grid place-items-center flex-grow mb-24'>
+					<div className='grid gap-12 place-items-center'>
+						<div className="grid gap-6 lg:gap-12 place-items-center">
+							<h1 className='text-6xl md:text-8xl tracking-widest font-oswald scale-y-150 text-pr'>
+								AMORE COFFEE
+							</h1>
+							<p className="text-3xl lg:text-4xl tracking-widest font-questrial text-primary/70 font-bold">All are welcome</p>
+						</div>
+						{/* <div
 					>
 						<motion.h2
-							className='text-3xl md:text-5xl font-amoreCursive flex space-x-4 flex-wrap justify-center px-3'
+							className='text-2xl md:text-4xl flex space-x-3 mt-8 mb-8 flex-wrap   '
 							variants={sentenceVariant}
 							initial='hidden'
 							animate='visible'
@@ -93,18 +89,41 @@ const LandingHero = () => {
 								);
 							})}
 						</motion.h2>
-					</motion.div>
+					</div> */}
 
-					<motion.div
-						className='py-4'
-						variants={buttonVariant}
-						initial='hidden'
-						animate='visible'
-					>
-						<Link href={'/amore-coffee-menu'}>
-							<span className='btn bg-gray-200  text-4xl'>Menu</span>
-						</Link>
-					</motion.div>
+						<motion.div
+							className='hidden  place-items-center w-full px-2 py-8 lg:py-1 gap-6 lg:gap-0 lg:flex backdrop-blur- bg-secondary/20 rounded-sm  lg:shadow-lg shadow-dark  lg:justify-between items-center'
+							variants={buttonVariant}
+							initial='hidden'
+							animate='visible'
+						>
+							<Link href={'/amore-coffee-menu'}>
+								<span className='btn   '>Menu</span>
+							</Link>
+
+							<Link href={'/amore-coffee-menu'}>
+								<span className='btn    '>Artists</span>
+							</Link>
+							<Link href={'/amore-coffee-menu'}>
+								<span className='btn   '>Event Space</span>
+							</Link>
+						</motion.div>
+						{/* <motion.div
+							className='lg:hidden grid  '
+							variants={buttonVariant}
+							initial='hidden'
+							animate='visible'
+						>
+							<Link href={'/amore-coffee-menu'}>
+								<span className=' bg-primary/70 rounded-sm font-bold hover:bg-primary/95 transition duration-700 cursor-pointer hover:scale-105 p-3 text-2xl backdrop-blur-sm '>
+									Get In Touch
+								</span>
+							</Link>
+						</motion.div> */}
+					</div>
+				</div>
+				<div className='grid place-items-center mb-24 text-lg lg:text-2xl font-tinos  text-light/80 tracking-widest'>
+					<span>879 Smith Ave S, St.Paul, MN 55118</span>
 				</div>
 			</div>
 		</div>
