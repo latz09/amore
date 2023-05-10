@@ -67,7 +67,7 @@ const LandingHero = () => {
 							<h1 className='text-6xl md:text-8xl tracking-widest font-oswald scale-y-150 text-pr'>
 								AMORE COFFEE
 							</h1>
-							<p className="text-3xl lg:text-4xl tracking-widest font-questrial text-primary font-bold">All are welcome</p>
+							<p className="text-3xl lg:text-4xl tracking-widest font-questrial text-[#FFF6EE] font-bold">All are welcome</p>
 						</div>
 						{/* <div
 					>
